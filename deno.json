@@ -17,5 +17,6 @@
       "exclude": []
     }
   },
-  "compilerOptions": {}
+  "compilerOptions": {},
+  "importMap": "import_map.json"
 }
