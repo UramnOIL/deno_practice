@@ -12,6 +12,8 @@ ENV PATH=${DENO_INSTALL}/bin:${PATH} \
     DENO_DIR=${DENO_INSTALL}/.cache/deno
 
 RUN deno run -A https://deno.land/x/aleph/install.ts
+RUN deno install -qAf --unstable https://deno.land/x/denon/denon.ts
+
 
 RUN chown -R vscode /deno
 
