@@ -1,22 +1,32 @@
 import React from 'react'
-import Header from '~/components/organisms/Header/index.tsx'
 
 export default function Home() {
   return (
     <div>
       <header><h1>ポートフォリオ</h1></header>
       <div>
+        <div>
         <h2>Get Pod Name</h2>
-        <a href="/getpodname">/aws_eks_practice</a>
-        <p>アクセスしたAPIサーバーが動いているPod名を表示します。</p>
-
-        <p>EKS上にAPIサーバをデプロイしています。</p>
-        <p>CircleCIとArgoCDでGitOpsをコンセプトとしたCI/CDパイプラインを構築しています。</p>
-
-        <p>IaC: https://github.com/UramnOIL/aws_eks_practice</p>
-        <p>Kubernetes: https://github.com/UramnOIL/kubernetes_practice</p>
-        <p>APIサーバー: https://github.com/UramnOIL/rust_practice</p>
-        <p>フロントエンド: https://github.com/UramnOIL/deno_practice</p>
+        <div>
+          <a href="/getpodname">/aws_eks_practice</a>
+          <p>アクセスしたAPIサーバーが動いているPod名を表示します。</p>
+          <p>
+            EKS上にAPIサーバをデプロイしています。<br />
+            CircleCIとArgoCDでGitOpsをコンセプトとしたCI/CDパイプラインを構築しています。
+          </p>
+        </div>
+        </div>
+          <h2>Repositories</h2>
+          <div>
+            <ul>
+              <li>IaC: <a href='https://github.com/UramnOIL/aws_eks_practice' target='_blank'>https://github.com/UramnOIL/aws_eks_practice</a></li>
+              <li>Kubernetes: <a href='https://github.com/UramnOIL/kubernetes_practice' target='_blank'>https://github.com/UramnOIL/kubernetes_practice</a></li>
+              <li>APIサーバー: <a href='https://github.com/UramnOIL/rust_practice' target='_blank'>https://github.com/UramnOIL/rust_practice</a></li>
+              <li>フロントエンド: <a href='https://github.com/UramnOIL/deno_practice' target='_blank'>https://github.com/UramnOIL/deno_practice</a></li>
+            </ul>
+          </div>
+        <div>
+        </div>
       </div>
     </div>
   )
